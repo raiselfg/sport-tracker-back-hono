@@ -2,10 +2,7 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-const welcomeStrings = [
-  "Hello Hono!",
-  "To learn more about Hono on Vercel, visit https://vercel.com/docs/frameworks/backend/hono",
-];
+const welcomeStrings = ["Hello Hono!"];
 
 app.get("/", (c) => {
   return c.text(welcomeStrings.join("\n\n"));
